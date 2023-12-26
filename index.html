@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+<script type="text/javascript">
+
+    const myQuestions = [
+  {
+    "question": "Question 1",
+    "answers": {
+      "a": "answer 1",
+      "b": "answer 2",
+      "c": "answer 3",
+      "d": "answer 4"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Question 2",
+    "answers": {
+      "a": "answer 1",
+      "b": "answer 2",
+      "c": "answer 3",
+      "d": "answer 4"
+    },
+    "correctAnswer": "a"
+  }
+]
+
+    </script>
+  <style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+body{
+  font-size: 20px;
+  font-family: 'Verdana', sans-serif;
+  color: #333;
+  font-weight: 300;
+  text-align: center;
+  background-color: #f8f6f0;
+}
+h1{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #444;
+  color: #fff;
+}
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+button{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  background-color: #279;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+button:hover{
+  background-color: #38a;
+}
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Quiz</h1>
+<div class="quiz-container">
+  <div id="quiz"></div>
+</div>
+<button id="previous">Previous Question</button>
+<button id="next">Next Question</button>
+<button id="submit">Submit Quiz</button>
+<div id="results"></div>
+
+<script src="https://gist.github.com/georgesb/34cdc30c1f23cd8bfd1d37feab968dc6.js"></script>
+
+<!--
+
+The MIT License (MIT)
+
+Copyright (c) 2023 SitePoint (https://codepen.io/SitePoint/pen/GmPjjL)
+Fork of an original work Simple JavaScript Quiz With Pagination (https://codepen.io/SitePoint/pen/GmPjjL)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+-->
+
+</body>
+
+</html>
